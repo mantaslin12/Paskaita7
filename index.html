@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("Trecia");
+        
+        
+        var width = 50
+        var height = 50
+        var ratio = width / height;
+        for (var row = 0; row < height; row++) {
+            for (var col = 0; col < width; col++) {
+                var diff = parseInt((row * ratio), 50);
+
+                // document.write (diff == col || col == width - diff - 1 ? '*' : '-')
+
+                if (col == width - 1) {
+                    document.write('<br>')
+                }
+            }
+            console.log(width);
+        }
+    </script>
+    <!-- <script src="./javascript/ciklai.js"></script> -->
+</body>
+
+</html>
